@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "Snacky",
+    "slug": "snacky",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": { "supportsTablet": true },
+    "android": {
+      "package": "com.snackmanager.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#FCF6F6"
+      }
+    },
+    "web": { "favicon": "./assets/favicon.jpg" },
+    "plugins": [
+      "expo-sqlite",
+      "expo-sharing",
+      "expo-image-picker",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/icon.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#FCF6F6"
+        }
+      ],
+      "@react-native-community/datetimepicker"
+    ],
+    "updates": {
+      "url": "https://u.expo.dev/28536c00-4178-4c08-9a97-c8a39a642949",
+      "enabled": true,
+      "fallbackToCacheTimeout": 0
+    },
+    "runtimeVersion": { "policy": "sdkVersion" },
+    "extra": { "eas": { "projectId": "28536c00-4178-4c08-9a97-c8a39a642949" } }
+  }
+}
