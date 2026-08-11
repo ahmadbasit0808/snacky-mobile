@@ -188,6 +188,10 @@ const seedDefaultSnacks = async (conn) => {
     "INSERT OR REPLACE INTO settings (key,value) VALUES (?,?)",
     ["default_snacks_seeded_v3", "1"],
   );
+  await conn.runAsync(
+    "INSERT OR REPLACE INTO settings (key,value) VALUES (?,?)",
+    ["default_snacks_seeded_v4", "1"],
+  );
 };
 
 export const initDb = async () => {
@@ -556,6 +560,10 @@ export const restoreData = async (data) => {
       s.value,
     ]);
   }
+  await conn.runAsync(
+    "INSERT OR REPLACE INTO settings (key,value) VALUES (?,?)",
+    ["default_snacks_seeded_v4", "1"],
+  );
   for (const sn of data.snacks || []) {
     await conn.runAsync(
       "INSERT INTO snacks (id,name,category,stock,unit,price,brand,flavor,image) VALUES (?,?,?,?,?,?,?,?,?)",

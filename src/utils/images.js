@@ -24,8 +24,13 @@ const LOCAL_ASSETS = {
   "./../../assets/images/Big-apple.jpg": require("../../assets/images/Big-apple.jpg"),
   "./../../assets/images/Oreo.jpg": require("../../assets/images/Oreo.jpg"),
   "./../../assets/images/tiger.png": require("../../assets/images/tiger.png"),
+  "./../../assets/images/popcop.webp": require("../../assets/images/popcop.webp"),
+  "./../../assets/images/makhanmalai.webp": require("../../assets/images/makhanmalai.webp"),
+  "./../../assets/images/salva.webp": require("../../assets/images/salva.webp"),
   "./../../assets/images/sooper.webp": require("../../assets/images/sooper.webp"),
   "./../../assets/images/kick.webp": require("../../assets/images/kick.webp"),
+  "./../../assets/images/manymore.jpg": require("../../assets/images/manymore.jpg"),
+  "./../../assets/images/golgappa.jpg": require("../../assets/images/golgappa.jpg"),
 };
 
 /**
